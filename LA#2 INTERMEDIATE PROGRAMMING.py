@@ -1,0 +1,12 @@
+x = int(input("Enter value for x: "))
+y = int(input("Enter value for y: "))
+print("")
+print(f"Values = (x={x}, y={y})") 
+print(f"{x} > {y} = {x > y}")
+print(f"{x} >= {y} = {x >= y}")
+print(f"{x} < {y} = {x < y}")
+print(f"{x} <= {y} = {x <= y}")
+print(f"{x} == {y} = {x == y}")
+print(f"{x} != {y} = {x != y}")
+
+#ZYLK MANDOLADO 
