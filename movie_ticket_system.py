@@ -23,30 +23,30 @@ while True:
             price = price - discounted_price
             print(f"Regular: {discounted_price:.2f}")
 
-        if customer == "student":
+        elif customer == "student":
             discount = 0.20
             discounted_price = price * discount
             price = price - discounted_price
-            print(f"Student Discount (20%): {discounted_price:.2f}")
+            print(f"Student Discount (20%): -{discounted_price:.2f}")
 
         
-        if customer == "senior":
+        elif customer == "senior":
             discount = 0.30
             discounted_price = price * discount
             price = price - discounted_price
-            print(f"Senior Discount (30%): {discounted_price:.2f}")
+            print(f"Senior Discount (30%): -{discounted_price:.2f}")
 
     if show_time < 12:
         discount = 0.10
         discounted_price = price * discount
         price = price - discounted_price
-        print(f"Matinee Discount (10%): {discounted_price:.2f}")
+        print(f"Matinee Discount (10%): -{discounted_price:.2f}")
 
     if  num_ticket >= 5:
         discount = 0.05
         discounted_price = price * discount
         price = price - discounted_price
-        print(f"Group Discount (5%): {discounted_price:.2f}")
+        print(f"Group Discount (5%): -{discounted_price:.2f}")
 
     print(f"\nTOTAL: {price:.2f}")
     print("Thank you for your purchese!")
@@ -56,7 +56,6 @@ while True:
     if again != "yes".lower().strip():
         print("Thank you for your purchese! Come Again!")
         break
-
 
 
 # print("\n=== Movie Ticket System ===")
@@ -82,30 +81,30 @@ while True:
 #         price = price - discounted_price
 #         print(f"Regular: {discounted_price:.2f}")
 
-#     if customer == "student":
+#     elif customer == "student":
 #         discount = 0.20
 #         discounted_price = price * discount
 #         price = price - discounted_price
-#         print(f"Student Discount (20%): {discounted_price:.2f}")
+#         print(f"Student Discount (20%): -{discounted_price:.2f}")
 
         
-#     if customer == "senior":
+#     elif customer == "senior":
 #         discount = 0.30
 #         discounted_price = price * discount
 #         price = price - discounted_price
-#         print(f"Senior Discount (30%): {discounted_price:.2f}")
+#         print(f"Senior Discount (30%): -{discounted_price:.2f}")
 
 # if show_time < 12:
 #     discount = 0.10
 #     discounted_price = price * discount
 #     price = price - discounted_price
-#     print(f"Matinee Discount (10%): {discounted_price:.2f}")
+#     print(f"Matinee Discount (10%): -{discounted_price:.2f}")
 
 # if  num_ticket >= 5:
 #     discount = 0.05
 #     discounted_price = price * discount
 #     price = price - discounted_price
-#     print(f"Group Discount (5%): {discounted_price:.2f}")
+#     print(f"Group Discount (5%): -{discounted_price:.2f}")
 
 #     print(f"\nTOTAL: {price:.2f}")
 #     print("Thank you for your purchese!")
