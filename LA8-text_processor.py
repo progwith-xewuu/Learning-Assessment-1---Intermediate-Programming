@@ -7,6 +7,6 @@ print("letter 'a' appears:", user.count("a"))
 print(f"Without extra spaces: {user}".strip())
 print("With Underscore:", user.strip().replace(" ", "_"))
 
-print("\n Splitted Sentence: ")
+print("\nSplitted Sentence: ")
 for word in user.strip().split():
     print(word)
